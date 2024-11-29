@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="handle()">
+    <h1 class="heading">Quiz App</h1>
+    <div class="time">
+        <h1 id="min">00</h1>
+        <h1 id="sec">00</h1>
+    </div>
+
+
+
+    <div class="container"  id="quizContainer">
+
+        <div class="header">
+            <h1 id="questionElement"></h1>
+        </div>
+        <div class="body">
+            <ul id="optionElement">
+
+            </ul>
+        </div>
+        <div class="footer">
+            <p> <span id="currentQuesCount" >1</span>  /  <span id="totalCount" >10</span>  </p>
+            <button onclick="nextQues()" id="nextBtn" class="btun" disabled>Next</button>
+        </div>
+
+
+    </div>
+
+    <div class="reslt" id="resultContainer" >
+    </div>
+
+    <h4 id="text" class="teet"></h4>
+</body>
+<script src="app.js"></script>
+</html>
+
+
